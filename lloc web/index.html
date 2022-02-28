@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cartell</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+       $(document).ready(function(){
+            $("h1").hover(function(){
+                $(this).css("color","orangered");
+                $("h2").css("color","white");
+                $("h3").css("color","red");
+                $(".cercle").css("background-color","white");
+                $(".cercle").css("border-color","orangered");
+                $(".ralles").css("color","white");
+            });
+            $(".cercle").hover(function(){
+                $(this).css("background-color","black");
+                $("h1").css("color","white");
+                $("h2").css("color","black");
+                $("h3").css("color","black");
+                $(".cercle").css("border-color","white");
+                $(".ralles").css("color","black");
+            });
+        });
+    </script>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        
+
+        body{
+            background-color: orange;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-rows: repeat(4, 200px);
+        }
+        h1{
+            font-family: 'Roboto Mono', monospace;
+            font-size: 40em;
+            grid-column: 3/6;
+            grid-row: 1/5;
+            display: flex;
+            justify-content: start;
+            justify-content: left;
+            
+
+        }
+        h2{
+            font-family: 'Anton', sans-serif;
+            color: orangered;
+            font-size: 40px;
+            grid-column: 5/6;
+            grid-row: 3/8;
+            margin-right: 150px;
+
+        }
+        h3{
+            font-family: 'Roboto Mono', monospace;
+            font-size: 4em;
+            grid-column: 5/10;
+            grid-row: 5/5;
+        }
+
+        .cercle{
+            background-color: orangered;
+            border: 20px solid black;
+            width: 300px;
+            height: 300px;
+            
+            border-radius: 100%;
+            grid-column: 10/12;
+            grid-row: 2/4;
+        }
+        .ralles{
+            font-family: 'Roboto Mono', monospace;
+            font-size: 3em;
+            grid-column: 9/12;
+            grid-row: 3/5;
+            transform: rotate(-45deg);
+        }
+
+        #bin{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        
+        
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>M</h1>
+        <h2>
+            P<br>
+            O<br>
+            E<br>
+            M<br>
+            A<br>
+            R<br>
+            I
+        </h2>
+        <h3>DLIA GOLOSA</h3>
+        <div class="cercle"></div>
+        <div class="ralles">
+            <div class="ralla1">_____</div>
+            <div class="ralla2">_____</div>
+            <div class="ralla3">_____</div>
+        </div>
+    </div>
+
+</body>
+</html>
